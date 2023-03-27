@@ -1,3 +1,7 @@
+using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 namespace Infrastructure.Persistence.Configurations.Application;
 
 public class AccountConfiguration:IEntityTypeConfiguration<Account>

@@ -6,17 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c3f864-eec1-4c70-8e33-93224e1b5fb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/RoleClaim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserClaim.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserLogin.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserRole.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserToken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/AccountCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/AccountCategory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/RoleClaim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/RoleClaim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/UserClaim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserClaim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/UserLogin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserLogin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/UserRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserRole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Identity/UserToken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Identity/UserToken.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AccountConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AccountConfiguration.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -92,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679759348112</updated>
-      <workItem from="1679759353395" duration="409000" />
+      <workItem from="1679759353395" duration="2375000" />
     </task>
     <servers />
   </component>
@@ -102,5 +101,9 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

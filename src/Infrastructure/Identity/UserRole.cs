@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace Infrastructure.Identity;
 
-public class UserRole
+public class UserRole:IdentityUserRole<string>
 {
     
 }
