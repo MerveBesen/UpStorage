@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "ox4NeR4H2iPFRyB8YJvwkjqFA/vsgHcgVjbNNJpqXHo0w4kNFHGh2XBu265lTR2iiVdhnMX2tZaieltU/Q9Lkw==",
+  "dgSpecHash": "+qp6rQi1FplgI4Njll7azCutHDN9X/0lLoo34ecDpsmN8SKHVEIhob5asnLqt2hAhcYf8290TntMM3tFU9tf0Q==",
   "success": true,
   "projectFilePath": "/Users/mervebesen/Desktop/C#/UpStorage/src/Application/Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/mervebesen/.nuget/packages/microsoft.aspnetcore.cryptography.internal/8.0.0-preview.2.23153.2/microsoft.aspnetcore.cryptography.internal.8.0.0-preview.2.23153.2.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/8.0.0-preview.2.23153.2/microsoft.aspnetcore.cryptography.keyderivation.8.0.0-preview.2.23153.2.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0-preview.2.23128.3/microsoft.extensions.caching.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0-preview.2.23128.3/microsoft.extensions.dependencyinjection.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0-preview.2.23128.3/microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.identity.core/8.0.0-preview.2.23153.2/microsoft.extensions.identity.core.8.0.0-preview.2.23153.2.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.identity.stores/8.0.0-preview.2.23153.2/microsoft.extensions.identity.stores.8.0.0-preview.2.23153.2.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.logging/8.0.0-preview.2.23128.3/microsoft.extensions.logging.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0-preview.2.23128.3/microsoft.extensions.logging.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.options/8.0.0-preview.2.23128.3/microsoft.extensions.options.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/microsoft.extensions.primitives/8.0.0-preview.2.23128.3/microsoft.extensions.primitives.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "/Users/mervebesen/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

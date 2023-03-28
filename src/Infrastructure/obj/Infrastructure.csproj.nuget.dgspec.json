@@ -96,6 +96,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.0-preview.2.23153.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

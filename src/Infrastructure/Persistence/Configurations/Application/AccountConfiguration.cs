@@ -14,9 +14,9 @@ public class AccountConfiguration:IEntityTypeConfiguration<Account>
             // Title
             builder.Property(x => x.Title).IsRequired();
             builder.Property(x => x.Title).HasMaxLength(150);
-            //builder.HasIndex(x => x.Title);
+            builder.HasIndex(x => x.Title);
 
-            builder.HasIndex(x => new {x.Title,x.UserName });
+            //builder.HasIndex(x => new {x.Title,x.UserName });
 
             // UserName
             builder.Property(x => x.UserName).IsRequired();
@@ -24,11 +24,11 @@ public class AccountConfiguration:IEntityTypeConfiguration<Account>
 
             // Password
             builder.Property(x => x.Password).IsRequired();
-            builder.Property(x => x.Password).HasMaxLength(100);
+            builder.Property(x => x.Password).HasMaxLength(1000);
 
             // Url
             builder.Property(x => x.Url).IsRequired(false);
-            builder.Property(x => x.Url).HasMaxLength(100);
+            builder.Property(x => x.Url).HasMaxLength(1000);
 
             // IsFavourite
             builder.Property(x => x.IsFavourite).IsRequired();
