@@ -10,6 +10,10 @@ public class ApplicationDbContext : DbContext,IApplicationDbContext
     public DbSet<Account> Accounts { get; set; }
     public DbSet<Country> Countries { get; set; }
     public DbSet<City> Cities { get; set; }
+    
+    public DbSet<Address> Addresses { get; set; }
+    
+    public DbSet<Note> Notes { get; set; }
     public Task<int> SaveChangeAsync(CancellationToken cancellationToken)
     {
         throw new NotImplementedException();

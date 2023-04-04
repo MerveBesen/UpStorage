@@ -9,9 +9,9 @@ public class CountryConfıguration:IEntityTypeConfiguration<Country>
     public void Configure(EntityTypeBuilder<Country> builder)
     {
         // Relationships
-        builder.HasMany<City>(x => x.Cities)
-            .WithOne(x => x.Country)
-            .HasForeignKey(x => x.CountryId);
+        builder.HasMany<City>(x => x.Cities)        //country has many city
+            .WithOne(x => x.Country)        //city has one country
+            .HasForeignKey(x => x.CountryId);           
 
     }
 }

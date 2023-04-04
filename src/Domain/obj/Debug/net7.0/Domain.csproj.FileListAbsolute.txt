@@ -1,0 +1,12 @@
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/bin/Debug/net7.0/Domain.deps.json
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/bin/Debug/net7.0/Domain.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/bin/Debug/net7.0/Domain.pdb
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/refint/Domain.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/Domain.pdb
+/Users/mervebesen/Desktop/C#/UpStorage/src/Domain/obj/Debug/net7.0/ref/Domain.dll

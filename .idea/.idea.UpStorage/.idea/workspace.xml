@@ -6,65 +6,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c3f864-eec1-4c70-8e33-93224e1b5fb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IExcelService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Models/Excel/ExcelBase64Dto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Models/Excel/ExcelCityDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Cities/Commands/Add/CityAddCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Cities/Commands/Add/CityAddCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Cities/Queries/GetAll/CityGetAllDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Cities/Queries/GetAll/CityGetAllQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Cities/Queries/GetAll/CityGetAllQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Excel/Commands/ReadCities/ExcelReadCitiesCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Excel/Commands/ReadCities/ExcelReadCitiesCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Common/Response.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Enums/AddressType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Services/ExcelManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebApi/Controllers/ApiControllerBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebApi/Controllers/CitiesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebApi/Controllers/ExcelsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Add/AddressAddCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Add/AddressAddCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetAll/AddressGetAllDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetAll/AddressGetAllQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetAll/AddressGetAllQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Entities/NoteCategory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/NoteCategoryConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/NoteConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/Application.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/Application.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Address.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/Debug/net7.0/Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/Debug/net7.0/Domain.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AccountCategoryConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AccountCategoryConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Country.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Note.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Identity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Identity/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AddressConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AddressConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CountryConfıguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CountryConfıguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Identity/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Identity/UserConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/WebApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/WebApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/WebApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/WebApi.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/WebApi.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/WebApi.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Application.IntegrationTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.IntegrationTests/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +37,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b85765610c77afea116eb235b0824d2d49e530f47c4cfb6f7b665737a52a2/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/868844f68a5d8246b18953a21c5955e2dbdf23e25646411e16b1c18abf417b/IEntityTypeConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -145,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679759348112</updated>
-      <workItem from="1679759353395" duration="22006000" />
+      <workItem from="1679759353395" duration="34250000" />
     </task>
     <servers />
   </component>

@@ -58,7 +58,9 @@ public class UserConfiguration :IEntityTypeConfiguration<User>
         builder.HasMany<UserRole>().WithOne().HasForeignKey(ur => ur.UserId).IsRequired();
 
         //Each User can have many Address
-        //builder.HasMany<Address>().WithOne().HasForeignKey(x => x.UserId).IsRequired();
+        builder.HasMany<Address>(x=>x.Addresses)
+            .WithOne(x=>x.User)
+            .HasForeignKey(x => x.UserId).IsRequired();
 
         // CreatedDate
         builder.Property(x => x.CreatedOn).IsRequired();
