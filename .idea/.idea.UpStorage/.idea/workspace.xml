@@ -6,19 +6,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c3f864-eec1-4c70-8e33-93224e1b5fb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Common/Models/Excel/ExcelCountryDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Excel/Commands/ReadCountries/ExcelReadCountriesCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Excel/Commands/ReadCountries/ExcelReadCountriesCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Common/Excel/ExcelMapper/ExcelCityDtoConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Common/Excel/ExcelMapper/ExcelCountryDtoConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CountryConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Extensions/StringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/ConfigureServices.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IExcelService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IExcelService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Models/Excel/ExcelBase64Dto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Models/Excel/ExcelBase64Dto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CityConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CityConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CountryConfıguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Services/ExcelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Services/ExcelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebApi/Controllers/ExcelsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/Controllers/ExcelsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Features/Cities/Commands/Add/CityAddCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Features/Cities/Commands/Add/CityAddCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Common/Excel/ExcelMapper/ExcelCityDtoConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Common/Excel/ExcelMapper/ExcelCityDtoConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/IdentityContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/IdentityContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/bin/Debug/net7.0/WebApi.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/ref/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/ref/WebApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/refint/WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/refint/WebApi.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.4858044&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.2351145&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -101,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679759348112</updated>
       <workItem from="1679759353395" duration="22006000" />
+      <workItem from="1680637761345" duration="805000" />
     </task>
     <servers />
   </component>

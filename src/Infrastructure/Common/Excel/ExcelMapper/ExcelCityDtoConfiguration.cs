@@ -18,7 +18,7 @@ public class ExcelCityDtoConfiguration:ExcelClassMap<ExcelCityDto>
             .WithColumnIndex(2);
         Map(c => c.Latitude)
             .WithColumnIndex(3)
-            .WithInvalidFallback(null);
+            .WithInvalidFallback(null);         //Eğer değer gelmez ise null ata
         
         Map(c => c.Longitude)
             .WithColumnIndex(4)
