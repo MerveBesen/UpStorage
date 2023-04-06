@@ -14,10 +14,4 @@
       <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Features\Addresses\Commands\Delete" />
-      <Folder Include="Features\Addresses\Commands\HardDelete" />
-      <Folder Include="Features\Addresses\Commands\Update" />
-    </ItemGroup>
-
 </Project>

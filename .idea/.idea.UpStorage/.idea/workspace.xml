@@ -6,30 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36c3f864-eec1-4c70-8e33-93224e1b5fb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Add/AddressAddCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Add/AddressAddCommandHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetAll/AddressGetAllDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetAll/AddressGetAllQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetAll/AddressGetAllQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entities/NoteCategory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/NoteCategoryConfiguration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/NoteConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Delete/AddressDeleteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Delete/AddressDeleteCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/HardDelete/AddressHardDeleteCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/HardDelete/AddressHardDeleteCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Update/AddressUpdateCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Commands/Update/AddressUpdateCommandHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UpStorage/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Common/Interfaces/IApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Features/Addresses/Queries/GetById/AddressGetByIdQueryHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Address.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Address.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Country.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Country.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Entities/Note.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entities/Note.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Identity/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Identity/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AddressConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/AddressConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CountryConfıguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Application/CountryConfıguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Identity/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Configurations/Identity/UserConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Persistence/Contexts/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/Debug/net7.0/WebApi.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebApi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.IntegrationTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.IntegrationTests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Application.UnitTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Application.UnitTests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,26 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.4858044",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.4858044&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/mervebesen/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/mervebesen/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/mervebesen/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/mervebesen/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/mervebesen/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/mervebesen/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: http">
     <configuration name="WebApi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/WebApi/WebApi.csproj" />
@@ -112,6 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679759348112</updated>
       <workItem from="1679759353395" duration="34250000" />
+      <workItem from="1680701290182" duration="6415000" />
     </task>
     <servers />
   </component>

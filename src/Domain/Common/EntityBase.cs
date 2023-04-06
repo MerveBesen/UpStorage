@@ -5,7 +5,7 @@ public abstract class EntityBase<TKey> : IEntityBase<TKey>,ICreatedByEntity,IMod
 {
     public TKey Id { get; set; }
     
-    public DateTimeOffset CreatedOn { get; set; }
+    public DateTimeOffset? CreatedOn { get; set; }
     public string? CreatedByUserId { get; set; }
     
     public DateTimeOffset ModifiedOn { get; set; }
