@@ -16,6 +16,8 @@ namespace Infrastructure.Persistence.Configurations.Application
             // Relationships
             builder.HasOne<User>().WithMany()
                 .HasForeignKey(x => x.UserId);
+
+            builder.ToTable("Addresses");
         }
     }
 }
