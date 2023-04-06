@@ -1,10 +1,11 @@
-namespace Domain.Enums;
-
-public enum AddressType
+﻿namespace Domain.Enums
 {
-    Home=0,
-    Business=1,
-    Friends=2,
-    Family=3,
-    Other=4,
+    public enum AddressType
+    {
+        Home=0,
+        Business=1,
+        Friends=2,
+        Family=3,
+        Other=4,
+    }
 }

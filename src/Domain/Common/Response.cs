@@ -1,46 +1,47 @@
-namespace Domain.Common;
-
-public class Response<T>
+﻿namespace Domain.Common
 {
-    public string Massage { get; set; }
-    public T Data { get; set; }
-    public List<string> Errors { get; set; }
-
-    public Response()
+    public class Response<T>
     {
-        
-    }
+        public string Message { get; set; }
+        public T Data { get; set; }
+        public List<string> Errors { get; set; }
 
-    public Response(string massage)
-    {
-        Massage = massage;
-    }
+        public Response()
+        {
+            
+        }
 
-    public Response(string massage, T data)
-    {
-        Massage = massage;
-        
-        Data = data;
-    }
+        public Response(string message)
+        {
+            Message = message;
+        }
 
-    public Response(T data)
-    {
-        Data = data;
-    }
+        public Response(string message, T data)
+        {
+            Message = message;
 
-    public Response(string massage, T data, List<string> errors)
-    {
-        Massage = massage;
-        
-        Data = data;
-        
-        Errors = errors;
-    }
+            Data = data;
+        }
 
-    public Response(string massage, List<string> errors)
-    {
-        Massage = massage;
-        
-        Errors = errors;
+        public Response(T data)
+        {
+            Data = data;
+        }
+
+        public Response(string message, T data, List<string> errors)
+        {
+            Message = message;
+
+            Data = data;
+
+            Errors = errors;
+        }
+
+        public Response(string message, List<string> errors)
+        {
+            Message = message;
+
+            Errors = errors;
+        }
     }
- }
+}

@@ -1,7 +1,8 @@
-namespace Domain.Common;
-
-public interface ICreatedByEntity
+﻿namespace Domain.Common
 {
-    DateTimeOffset? CreatedOn { get; set; }
-    public string? CreatedByUserId { get; set; }
+    public interface ICreatedByEntity
+    {
+        DateTimeOffset CreatedOn { get; set; }
+        string? CreatedByUserId { get; set; }
+    }
 }

@@ -1,9 +1,10 @@
-using Domain.Common;
+﻿using Domain.Common;
 using MediatR;
 
-namespace Application.Features.Excel.Commands.ReadCountries;
-
-public class ExcelReadCountriesCommand:IRequest<Response<int>>
+namespace Application.Features.Excel.Commands.ReadCountries
 {
-    public string ExcelBase64Fiile { get; set; }
+    public class ExcelReadCountriesCommand:IRequest<Response<int>>
+    {
+        public string ExcelBase64File { get; set; }
+    }
 }

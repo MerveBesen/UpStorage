@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
-namespace Domain.Identity;
-
-public class UserRole:IdentityUserRole<string>
+namespace Domain.Identity
 {
-    
+    public class UserRole:IdentityUserRole<string>
+    {
+    }
 }

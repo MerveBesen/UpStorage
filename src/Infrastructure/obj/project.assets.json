@@ -1041,7 +1041,6 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "MediatR": "12.0.1",
-          "Microsoft.EntityFrameworkCore": "7.0.4",
           "Microsoft.Extensions.Identity.Stores": "7.0.4"
         },
         "compile": {

@@ -1,15 +1,11 @@
-namespace Application.UnitTests;
-
-public class Tests
+namespace Application.UnitTests
 {
-    [SetUp]
-    public void Setup()
+    public class UnitTest1
     {
-    }
+        [Fact]
+        public void Test1()
+        {
 
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
+        }
     }
 }

@@ -1,17 +1,19 @@
-using Domain.Identity;
+﻿using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Persistence.Configurations.Identity;
-
-public class UserClaimConfiguration:IEntityTypeConfiguration<UserClaim>
+namespace Infrastructure.Persistence.Configurations.Identity
 {
-    public void Configure(EntityTypeBuilder<UserClaim> builder)
+    public class UserClaimConfiguration:IEntityTypeConfiguration<UserClaim>
     {
-// Primary key
-        builder.HasKey(x => x.Id);
-        builder.Property(x => x.Id).HasMaxLength(191);
+        public void Configure(EntityTypeBuilder<UserClaim> builder)
+        {
+            // Primary key
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).HasMaxLength(191);
 
-        // Maps to the AspNetUserClaims table
-        builder.ToTable("UserClaims");    }
+            // Maps to the AspNetUserClaims table
+            builder.ToTable("UserClaims");
+        }
+    }
 }

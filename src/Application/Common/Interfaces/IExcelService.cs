@@ -1,9 +1,10 @@
-using Application.Common.Models.Excel;
+﻿using Application.Common.Models.Excel;
 
-namespace Application.Common.Interfaces;
-
-public interface IExcelService
+namespace Application.Common.Interfaces
 {
-    List<ExcelCityDto> ReadCities(ExcelBase64Dto excelDto);
-    List<ExcelCountryDto> ReadCountries(ExcelBase64Dto excelDto);
+    public interface IExcelService
+    {
+        List<ExcelCityDto> ReadCities(ExcelBase64Dto excelDto);
+        List<ExcelCountryDto> ReadCountries(ExcelBase64Dto excelDto);
+    }
 }

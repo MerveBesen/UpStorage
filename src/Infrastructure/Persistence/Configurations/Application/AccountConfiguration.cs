@@ -1,10 +1,10 @@
-using Domain.Entities;
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Persistence.Configurations.Application;
-
-public class AccountConfiguration:IEntityTypeConfiguration<Account>
+namespace Infrastructure.Persistence.Configurations.Application
+{
+    public class AccountConfiguration : IEntityTypeConfiguration<Account>
     {
         public void Configure(EntityTypeBuilder<Account> builder)
         {
@@ -65,3 +65,4 @@ public class AccountConfiguration:IEntityTypeConfiguration<Account>
 
         }
     }
+}

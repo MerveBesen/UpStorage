@@ -1,17 +1,18 @@
-using Domain.Identity;
+﻿using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Persistence.Configurations.Identity;
-
-public class UserRoleConfiguration:IEntityTypeConfiguration<UserRole>
+namespace Infrastructure.Persistence.Configurations.Identity
 {
-    public void Configure(EntityTypeBuilder<UserRole> builder)
+    public class UserRoleConfiguration:IEntityTypeConfiguration<UserRole>
     {
-        // Primary key
-        builder.HasKey(r => new { r.UserId, r.RoleId });
+        public void Configure(EntityTypeBuilder<UserRole> builder)
+        {
+            // Primary key
+            builder.HasKey(r => new { r.UserId, r.RoleId });
 
-        // Maps to the AspNetUserRoles table
-        builder.ToTable("UserRoles");
+            // Maps to the AspNetUserRoles table
+            builder.ToTable("UserRoles");
+        }
     }
 }

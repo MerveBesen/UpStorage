@@ -1,33 +1,35 @@
-using Application.Common.Interfaces;
+﻿using Application.Common.Interfaces;
 using Application.Common.Models.Excel;
+using Application.Features.Excel.Commands.ReadCities;
 using Domain.Common;
 using MediatR;
 
-namespace Application.Features.Excel.Commands.ReadCountries;
-
-public class ExcelReadCountriesCommandHandler:IRequestHandler<ExcelReadCountriesCommand, Response<int>>
+namespace Application.Features.Excel.Commands.ReadCountries
 {
-
-    private readonly IExcelService _excelService;
-    private readonly IApplicationDbContext _applicationDbContext;
-
-    public ExcelReadCountriesCommandHandler(IExcelService excelService, IApplicationDbContext applicationDbContext)
+    public class ExcelReadCountriesCommandHandler:IRequestHandler<ExcelReadCountriesCommand,Response<int>>
     {
-        _excelService = excelService;
-        _applicationDbContext = applicationDbContext;
-    }
+        private readonly IExcelService _excelService;
+        private readonly IApplicationDbContext _applicationDbContext;
 
-    public async Task<Response<int>> Handle(ExcelReadCountriesCommand request, CancellationToken cancellationToken)
-    {
+        public ExcelReadCountriesCommandHandler(IExcelService excelService, IApplicationDbContext applicationDbContext)
+        {
+            _excelService = excelService;
+            _applicationDbContext = applicationDbContext;
+        }
 
-        var countryDtos = _excelService.ReadCountries(new ExcelBase64Dto(file: request.ExcelBase64Fiile));
-        var countries = countryDtos.Select(x => x.MapToCountry()).ToList();
+        public async Task<Response<int>> Handle(ExcelReadCountriesCommand request, CancellationToken cancellationToken)
+        {
+            var countryDtos = _excelService.ReadCountries(new ExcelBase64Dto(file:request.ExcelBase64File));
 
-        await _applicationDbContext.Countries.AddRangeAsync(countries, cancellationToken);
+            var countries = countryDtos
+                .Select(x => x.MapToCountry())
+                .ToList();
 
-        await _applicationDbContext.SaveChangeAsync(cancellationToken);
+            await _applicationDbContext.Countries.AddRangeAsync(countries, cancellationToken);
 
-        return new Response<int>($"{countries.Count} countries were added to the db successfully.", countries.Count);
+            await _applicationDbContext.SaveChangesAsync(cancellationToken);
 
+            return new Response<int>($"{countries.Count} countries were added to the db successfully.", countries.Count);
+        }
     }
 }

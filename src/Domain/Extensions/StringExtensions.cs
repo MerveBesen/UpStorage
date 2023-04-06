@@ -1,16 +1,17 @@
-namespace Domain.Extensions;
-
-public static class StringExtensions
+﻿namespace Domain.Extensions
 {
-    public static bool IsContainsChar(this string text, int minCount)
+    public static class StringExtensions
     {
-        var results = text.Select(x => char.IsLetter(x));
-
-        if (results.Count(x=>x==true)==minCount)
+        public static bool IsContainsChar(this string text,int minCount)
         {
-            return true;
-        }
+          var results= text.Select(x => char.IsLetter(x));
 
-        return false;
+          if (results.Count(x=>x == true) == minCount)
+          {
+              return true;
+          }
+
+          return false;
+        }
     }
 }

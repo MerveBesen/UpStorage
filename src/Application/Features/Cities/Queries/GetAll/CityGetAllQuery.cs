@@ -1,16 +1,17 @@
-using MediatR;
+﻿using MediatR;
 
-namespace Application.Features.Cities.Queries.GetAll;
-
-public class CityGetAllQuery:IRequest<List<CityGetAllDto>>
+namespace Application.Features.Cities.Queries.GetAll
 {
-    public int CountryId { get; set; }
-    public bool? IsDeleted { get; set; }
-
-    public CityGetAllQuery(int countryId, bool? isDeleted)
+    public class CityGetAllQuery:IRequest<List<CityGetAllDto>>
     {
-        CountryId = countryId;
-        
-        IsDeleted = isDeleted;
+        public int CountryId { get; set; }
+        public bool? IsDeleted { get; set; }
+
+        public CityGetAllQuery(int countryId, bool? isDeleted)
+        {
+            CountryId = countryId;
+
+            IsDeleted = isDeleted;
+        }
     }
 }

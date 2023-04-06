@@ -1,6 +1,13 @@
-namespace Domain.Common;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public interface IEntityBase<TKey>
+namespace Domain.Common
 {
-    public TKey Id { get; set; }
+    public interface IEntityBase<TKey>
+    {
+       TKey Id { get; set; }
+    }
 }

@@ -1,24 +1,25 @@
-using Domain.Entities;
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.Persistence.Configurations.Application;
-
-public class AccountCategoryConfiguration:IEntityTypeConfiguration<AccountCategory>
+namespace Infrastructure.Persistence.Configurations.Application
 {
-    public void Configure(EntityTypeBuilder<AccountCategory> builder)
+    public class AccountCategoryConfiguration:IEntityTypeConfiguration<AccountCategory>
     {
-        
-        //ID
-        builder.HasKey(x => new { x.AccountId, x.CategoryId });
-        
-        //Relationships
-        builder.HasOne<Account>(x => x.Account)
-            .WithMany(x => x.AccountCategories)
-            .HasForeignKey(x => x.AccountId);
+        public void Configure(EntityTypeBuilder<AccountCategory> builder)
+        {
+            
+            // ID
+            builder.HasKey(x => new { x.AccountId, x.CategoryId });
 
-        builder.HasOne<Category>(x => x.Category)
-            .WithMany(x => x.AccountCategories)
-            .HasForeignKey(x => x.CategoryId);
+            // Relationships
+            builder.HasOne<Account>(x => x.Account)
+                .WithMany(x => x.AccountCategories)
+                .HasForeignKey(x => x.AccountId);
+
+            builder.HasOne<Category>(x => x.Category)
+                .WithMany(x => x.AccountCategories)
+                .HasForeignKey(x => x.CategoryId);
+        }
     }
 }

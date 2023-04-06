@@ -1,27 +1,28 @@
-using Application.Features.Cities.Commands.Add;
+﻿using Application.Features.Cities.Commands.Add;
 using Application.Features.Cities.Queries.GetAll;
-using Application.Features.Excel.Commands.ReadCities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApi.Controllers;
-
-public class CitiesController : ApiControllerBase
+namespace WebApi.Controllers
 {
-    [HttpPost]
-    public async Task<IActionResult> AddAsync(CityAddCommand command)
+
+    public class CitiesController : ApiControllerBase
     {
-        return Ok(await Mediator.Send(command) );
-    }
-    
-    [HttpPost("GetAll")]
-    public async Task<IActionResult> GetAllAsync(CityGetAllQuery query)
-    {
-        return Ok(await Mediator.Send(query) );
-    }
-    
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetByIdAsyc(int id)
-    {
-        return Ok(await Mediator.Send(new CityGetAllQuery(id,null)) );
+        [HttpPost]
+        public async Task<IActionResult> AddAsync(CityAddCommand command)
+        {
+            return Ok(await Mediator.Send(command));
+        }
+
+        [HttpPost("GetAll")]
+        public async Task<IActionResult> GetAllAsync(CityGetAllQuery query)
+        {
+            return Ok(await Mediator.Send(query));
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetByIdAsync(int id)
+        {
+            return Ok(await Mediator.Send(new CityGetAllQuery(id,null)));
+        }
     }
 }

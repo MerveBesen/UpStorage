@@ -1,8 +1,9 @@
-namespace Domain.Common;
-
-public interface IDeletedByEntity
+﻿namespace Domain.Common
 {
-    DateTimeOffset DeletedOn { get; set; }
-    public string? DeletedByUserId { get; set; }
-    bool IsDeleted { get; set; }
+    public interface IDeletedByEntity
+    {
+       DateTimeOffset? DeletedOn { get; set; }
+       string? DeletedByUserId { get; set; }
+       bool IsDeleted { get; set; }
+    }
 }

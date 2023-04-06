@@ -1,7 +1,8 @@
-namespace Domain.Common;
-
-public interface IModifiedByEntity      //Düzenleme geçmişini tutmak için
+﻿namespace Domain.Common
 {
-    DateTimeOffset ModifiedOn { get; set; }
-    public string? ModifiedByUserId { get; set; }
+    public interface IModifiedByEntity
+    {
+        DateTimeOffset? ModifiedOn { get; set; }
+        string? ModifiedByUserId { get; set; }
+    }
 }

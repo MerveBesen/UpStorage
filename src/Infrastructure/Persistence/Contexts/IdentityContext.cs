@@ -1,33 +1,34 @@
-using System.Reflection;
-using Domain.Entities;
-using Domain.Identity;
+﻿using Domain.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+using Domain.Entities;
 
-namespace Infrastructure.Persistence.Contexts;
-
-public class IdentityContext:IdentityDbContext<User,Role,string,UserClaim,UserRole,UserLogin,RoleClaim,UserToken>
+namespace Infrastructure.Persistence.Contexts
 {
-
-
-    public IdentityContext(DbContextOptions<IdentityContext> options) : base(options)
+    public class IdentityContext:IdentityDbContext<User,Role,string,UserClaim,UserRole,UserLogin,RoleClaim,UserToken>
     {
 
-    }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        // Configurations
-        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        public IdentityContext(DbContextOptions<IdentityContext> options) : base(options)
+        {
 
-        // Ignores
-        modelBuilder.Ignore<Account>();
-        modelBuilder.Ignore<Country>();
-        modelBuilder.Ignore<City>();
-        modelBuilder.Ignore<AccountCategory>();
-        modelBuilder.Ignore<Category>();
-        modelBuilder.Ignore<Address>();
+        }
 
-        base.OnModelCreating(modelBuilder);
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Configurations
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            // Ignores
+            modelBuilder.Ignore<Account>();
+            modelBuilder.Ignore<Country>();
+            modelBuilder.Ignore<City>();
+            modelBuilder.Ignore<AccountCategory>();
+            modelBuilder.Ignore<Category>();
+            modelBuilder.Ignore<Address>();
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
