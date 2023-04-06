@@ -23,7 +23,8 @@ public class AddressGetByIdQueryHandler:IRequestHandler<AddressGetByIdQuery,List
 
         if (request.IsDeleted.HasValue) dbQuery = dbQuery.Where(x => x.IsDeleted == request.IsDeleted.Value);
         
-        dbQuery = dbQuery.Include(x => x.Id);
+        dbQuery = dbQuery.Include(x => x.Country);
+        dbQuery = dbQuery.Include(x => x.City);
         
         var addresses = await dbQuery.ToListAsync(cancellationToken);
 

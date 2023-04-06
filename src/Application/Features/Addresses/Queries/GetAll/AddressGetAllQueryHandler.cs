@@ -18,12 +18,13 @@ public class AddressGetAllQueryHandler:IRequestHandler<AddressGetAllQuery,List<A
     {
         var dbQuery = _applicationDbContext.Addresses.AsQueryable();
 
-        dbQuery = dbQuery.Where(x => x.CountryId == request.CountryId);
+        dbQuery = dbQuery.Where(x => x.UserId == request.UserId);
         
-
         if (request.IsDeleted.HasValue) dbQuery = dbQuery.Where(x => x.IsDeleted == request.IsDeleted.Value);
 
         dbQuery = dbQuery.Include(x => x.Country);
+        
+        dbQuery = dbQuery.Include(x => x.City);
         
         var addresses = await dbQuery.ToListAsync(cancellationToken);
 
@@ -39,7 +40,7 @@ public class AddressGetAllQueryHandler:IRequestHandler<AddressGetAllQuery,List<A
         
         foreach (var address in addresses)
         {
-            yield return new AddressGetAllDto
+            yield return new AddressGetAllDto           
             {
                 Id = address.Id,
                 CountryId = address.CountryId,

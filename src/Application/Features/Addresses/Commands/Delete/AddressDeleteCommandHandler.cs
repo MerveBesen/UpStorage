@@ -26,7 +26,7 @@ public class AddressDeleteCommandHandler:IRequestHandler<AddressDeleteCommand,Re
 
         await _applicationDbContext.SaveChangeAsync(cancellationToken);     //save changes çalışmadan hi biri db ye gitmez.
 
-        return new Response<int>($"The new address named \"{address.Name}\" was successfully added.",address.Id);
+        return new Response<int>($"The address named \"{address.Name}\" was successfully moved deleted file.",address.Id);
 
     }
 }

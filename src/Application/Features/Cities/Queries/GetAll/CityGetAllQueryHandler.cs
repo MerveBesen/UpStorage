@@ -38,7 +38,7 @@ public class CityGetAllQueryHandler:IRequestHandler<CityGetAllQuery,List<CityGet
         
         foreach (var city in cities)
         {
-            yield return new CityGetAllDto()
+            yield return new CityGetAllDto()            // Her döngüde bir değeri gönderir. Sadede IEnumerable ile çalışır.
             {
                 Id = city.Id,
                 CountryId = city.CountryId,

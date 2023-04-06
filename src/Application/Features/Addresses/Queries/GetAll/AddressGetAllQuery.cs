@@ -4,12 +4,12 @@ namespace Application.Features.Addresses.Queries.GetAll;
 
 public class AddressGetAllQuery:IRequest<List<AddressGetAllDto>>
 {
-    public int CountryId { get; set; }
+    public string UserId { get; set; }
     public bool? IsDeleted { get; set; }
 
-    public AddressGetAllQuery(int countryId,int cityId,bool? isDeleted)
+    public AddressGetAllQuery(string userId,bool? isDeleted)
     {
-        CountryId = countryId;
+        UserId = userId;
 
         IsDeleted = isDeleted;
     }
