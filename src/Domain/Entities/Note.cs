@@ -4,5 +4,12 @@ namespace Domain.Entities;
 
 public class Note:EntityBase<Guid>
 {
-    public string Name { get; set; }
+    public string Title { get; set; }
+    
+    public string Content { get; set; }
+    
+    public bool IsFavourite { get; set; }
+ 
+    
+    public ICollection<NoteCategory> NoteCategories { get; set; }
 }

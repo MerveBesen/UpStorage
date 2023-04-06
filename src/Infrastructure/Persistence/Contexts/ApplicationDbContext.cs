@@ -12,6 +12,7 @@ public class ApplicationDbContext : DbContext,IApplicationDbContext
     public DbSet<Account> Accounts { get; set; }
     public DbSet<Country> Countries { get; set; }
     public DbSet<City> Cities { get; set; }
+<<<<<<< HEAD
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
     {
@@ -35,6 +36,12 @@ public class ApplicationDbContext : DbContext,IApplicationDbContext
         base.OnModelCreating(modelBuilder);
     }
 
+=======
+    
+    public DbSet<Address> Addresses { get; set; }
+    
+    public DbSet<Note> Notes { get; set; }
+>>>>>>> origin/homework
     public Task<int> SaveChangeAsync(CancellationToken cancellationToken)
     {
         throw new NotImplementedException();

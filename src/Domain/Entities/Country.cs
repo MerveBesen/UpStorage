@@ -17,5 +17,5 @@ public class Country:EntityBase<int>
     public decimal? Latitude { get; set; }
     public decimal? Longitude { get; set; }
     public string WikiDataId { get; set; }
-    public ICollection<City> Cities { get; set; }  
+    public ICollection<City> Cities { get; set; }   // A country has many city.
 }

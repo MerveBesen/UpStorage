@@ -16,4 +16,4 @@ public class AddressConfiguration:IEntityTypeConfiguration<Address>
         //Relationships
         builder.HasOne<User>().WithMany().HasForeignKey(x => x.UserId);
     }
-}
+}  
