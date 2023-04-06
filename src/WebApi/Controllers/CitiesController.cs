@@ -13,7 +13,7 @@ public class CitiesController : ApiControllerBase
         return Ok(await Mediator.Send(command) );
     }
     
-    [HttpPost]
+    [HttpPost("GetAll")]
     public async Task<IActionResult> GetAllAsync(CityGetAllQuery query)
     {
         return Ok(await Mediator.Send(query) );
