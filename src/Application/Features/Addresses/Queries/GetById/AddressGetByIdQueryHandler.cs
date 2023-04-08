@@ -1,4 +1,5 @@
 using Application.Common.Interfaces;
+using Application.Common.Models.Address;
 using Application.Features.Addresses.Queries.GetAll;
 using Domain.Entities;
 using MediatR;
@@ -53,6 +54,7 @@ public class AddressGetByIdQueryHandler:IRequestHandler<AddressGetByIdQuery,List
                 AddressLine1 = address.AddressLine1,
                 AddressLine2 = address.AddressLine2,
                 IsDeleted = address.IsDeleted,
+                AddressTypeName = AddressTypeDto.ConvertToAddressTypeName(address.AddressType),
 
             };
         }

@@ -20,7 +20,7 @@ public class AddressDeleteCommandHandler:IRequestHandler<AddressDeleteCommand,Re
     {
         var address = _applicationDbContext.Addresses.FirstOrDefault(x => x.Name == request.Name);
         
-        address.CreatedOn = DateTimeOffset.Now;
+        address.CreatedOn = new DateTimeOffset(0,0,0,0,0,0, TimeSpan.Zero);
         address.CreatedByUserId = null;
         address.IsDeleted = true;
 

@@ -14,4 +14,5 @@ public class AddressGetAllDto
     public string AddressLine1 { get; set; }
     public string? AddressLine2 { get; set; }
     public bool IsDeleted { get; set; }
+    public string AddressTypeName { get; set; }
 }
