@@ -18,6 +18,6 @@ public class AddressAddCommand:IRequest<Response<int>>
     public string AddressLine1 { get; set; }
     public string? AddressLine2 { get; set; }
     
-
+    public string AddressTypeName { get; set; }
     
 }
