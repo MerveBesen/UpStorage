@@ -5,9 +5,7 @@ namespace Application.Common.Models.Address;
 public class AddressTypeDto
 {
     public AddressType AddressType { get; set; }
-    
-    public string AddressTypeName { get; set; }
-    
+
     public static AddressType ConvertToAddressType(string AddressTypeName)
     {
         switch (AddressTypeName)

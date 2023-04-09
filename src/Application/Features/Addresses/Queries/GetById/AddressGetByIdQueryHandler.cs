@@ -51,6 +51,7 @@ public class AddressGetByIdQueryHandler:IRequestHandler<AddressGetByIdQuery,List
                 PostCode = address.PostCode,
                 Name = address.Name,
                 UserId = address.UserId,
+                UserName = address.User.FirstName,
                 AddressLine1 = address.AddressLine1,
                 AddressLine2 = address.AddressLine2,
                 IsDeleted = address.IsDeleted,

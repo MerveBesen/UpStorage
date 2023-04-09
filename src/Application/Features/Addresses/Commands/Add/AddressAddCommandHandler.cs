@@ -29,7 +29,7 @@ public class AddressAddCommandHandler:IRequestHandler<AddressAddCommand,Response
             AddressLine1 = request.AddressLine1,
             AddressLine2 = request.AddressLine2,
             CreatedOn = DateTimeOffset.Now,
-            CreatedByUserId = request.UserId,
+            CreatedByUserId = null,
             IsDeleted = false,
             AddressType = AddressTypeDto.ConvertToAddressType(request.AddressTypeName.ToLower()),
         };

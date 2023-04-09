@@ -50,6 +50,8 @@ namespace Infrastructure.Persistence.Configurations.Application
             // IsDeleted
             builder.Property(x => x.IsDeleted).IsRequired();
             builder.Property(x => x.IsDeleted).HasDefaultValueSql("0");
+            
+            
 
             builder.ToTable("Cities");
 
