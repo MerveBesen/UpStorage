@@ -1,8 +1,10 @@
 ﻿using Application.Common.Interfaces;
+using Application.Common.Localizations;
 using Domain.Common;
 using Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 
 namespace Application.Features.Cities.Commands.Add
 {
@@ -10,22 +12,15 @@ namespace Application.Features.Cities.Commands.Add
     {
         private readonly IApplicationDbContext _applicationDbContext;
 
-        public CityAddCommandHandler(IApplicationDbContext applicationDbContext)
+        private readonly IStringLocalizer<CommonLocalizations> _localizer;
+        public CityAddCommandHandler(IApplicationDbContext applicationDbContext, IStringLocalizer<CommonLocalizations> localizer)
         {
             _applicationDbContext = applicationDbContext;
+            _localizer = localizer;
         }
 
         public async Task<Response<int>> Handle(CityAddCommand request, CancellationToken cancellationToken)
         {
-            if (!await  _applicationDbContext.Countries.AnyAsync(x=>x.Id==request.CountryId, cancellationToken))        //Gelen istekteki id de böyle bir ülke var mı?
-            {
-                throw new ArgumentNullException(nameof(request.CountryId));
-            }
-            
-            if (await  _applicationDbContext.Cities.AnyAsync(x=>x.Name.ToLower()==request.Name.ToLower(), cancellationToken))           // Bu isimde başka bir kayıt var mı?
-            {
-                throw new ArgumentNullException(nameof(request.Name));
-            }
 
             var city = new City()
             {
@@ -42,7 +37,7 @@ namespace Application.Features.Cities.Commands.Add
 
             await _applicationDbContext.SaveChangesAsync(cancellationToken);
 
-            return new Response<int>($"The new city named \"{city.Name}\" was successfully added.",city.Id);
+            return new Response<int>(_localizer[CommonLocalizationKeys.City.Added,city.Name],city.Id);
         }
     }
 }

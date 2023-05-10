@@ -16,9 +16,6 @@ namespace Infrastructure.Persistence.Configurations.Application
             //Name 
             builder.Property(x => x.Name).IsRequired();
             
-            //UserId
-            builder.Property(x => x.User).IsRequired();
-            
             //CountryId
             builder.Property(x => x.CountryId).IsRequired();
             

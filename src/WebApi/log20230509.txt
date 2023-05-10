@@ -1,0 +1,130 @@
+2023-05-09 21:26:28.589 +03:00 [INF] User profile is available. Using '/Users/mervebesen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-05-09 21:26:28.777 +03:00 [INF] Now listening on: http://localhost:5223
+2023-05-09 21:26:28.779 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 21:26:28.779 +03:00 [INF] Hosting environment: Development
+2023-05-09 21:26:28.779 +03:00 [INF] Content root path: /Users/mervebesen/Desktop/C#/UpStorage/src/WebApi
+2023-05-09 21:26:30.074 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/index.html - -
+2023-05-09 21:26:30.553 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/index.html - - - 200 - text/html;charset=utf-8 487.2066ms
+2023-05-09 21:26:30.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/swagger-ui-standalone-preset.js - -
+2023-05-09 21:26:30.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/swagger-ui-bundle.js - -
+2023-05-09 21:26:30.832 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/swagger-ui.css - -
+2023-05-09 21:26:30.995 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-09 21:26:30.999 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-09 21:26:31.004 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-09 21:26:31.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/swagger-ui.css - - - 200 143943 text/css 204.4161ms
+2023-05-09 21:26:31.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 214.0573ms
+2023-05-09 21:26:31.037 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 215.0751ms
+2023-05-09 21:26:31.479 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - -
+2023-05-09 21:26:32.000 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 520.5333ms
+2023-05-09 21:26:43.096 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/api/Math?number=51 - -
+2023-05-09 21:26:43.122 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-05-09 21:26:43.126 +03:00 [INF] Executing endpoint 'WebApi.Controllers.MathController.IsEven (WebApi)'
+2023-05-09 21:26:43.147 +03:00 [INF] Route matched with {action = "IsEven", controller = "Math"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IsEven(Int32) on controller WebApi.Controllers.MathController (WebApi).
+2023-05-09 21:26:43.149 +03:00 [ERR] Unable to resolve service for type 'Application.Common.Helpers.MathHelper' while attempting to activate 'WebApi.Controllers.MathController'.
+System.InvalidOperationException: Unable to resolve service for type 'Application.Common.Helpers.MathHelper' while attempting to activate 'WebApi.Controllers.MathController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-05-09 21:26:43.162 +03:00 [INF] Executing ObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-05-09 21:26:43.168 +03:00 [INF] Executed action WebApi.Controllers.MathController.IsEven (WebApi) in 18.0962ms
+2023-05-09 21:26:43.171 +03:00 [INF] Executed endpoint 'WebApi.Controllers.MathController.IsEven (WebApi)'
+2023-05-09 21:26:43.171 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/api/Math?number=51 - - - 500 - application/json;+charset=utf-8 75.0835ms
+2023-05-09 21:28:14.318 +03:00 [INF] Application is shutting down...
+2023-05-09 21:28:18.850 +03:00 [INF] User profile is available. Using '/Users/mervebesen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-05-09 21:28:19.041 +03:00 [INF] Now listening on: http://localhost:5223
+2023-05-09 21:28:19.044 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 21:28:19.044 +03:00 [INF] Hosting environment: Development
+2023-05-09 21:28:19.044 +03:00 [INF] Content root path: /Users/mervebesen/Desktop/C#/UpStorage/src/WebApi
+2023-05-09 21:28:19.996 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/index.html - -
+2023-05-09 21:28:20.420 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/index.html - - - 200 - text/html;charset=utf-8 434.6230ms
+2023-05-09 21:28:20.978 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - -
+2023-05-09 21:28:21.346 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 367.9870ms
+2023-05-09 21:28:33.026 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/api/Math?number=98 - -
+2023-05-09 21:28:33.071 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-05-09 21:28:33.075 +03:00 [INF] Executing endpoint 'WebApi.Controllers.MathController.IsEven (WebApi)'
+2023-05-09 21:28:33.103 +03:00 [INF] Route matched with {action = "IsEven", controller = "Math"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IsEven(Int32) on controller WebApi.Controllers.MathController (WebApi).
+2023-05-09 21:28:33.119 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2023-05-09 21:28:33.127 +03:00 [INF] Executed action WebApi.Controllers.MathController.IsEven (WebApi) in 18.447ms
+2023-05-09 21:28:33.130 +03:00 [INF] Executed endpoint 'WebApi.Controllers.MathController.IsEven (WebApi)'
+2023-05-09 21:28:33.130 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/api/Math?number=98 - - - 200 - application/json;+charset=utf-8 104.8710ms
+2023-05-09 21:28:55.284 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/api/Math?number=97 - -
+2023-05-09 21:28:55.287 +03:00 [INF] Executing endpoint 'WebApi.Controllers.MathController.IsEven (WebApi)'
+2023-05-09 21:28:55.288 +03:00 [INF] Route matched with {action = "IsEven", controller = "Math"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult IsEven(Int32) on controller WebApi.Controllers.MathController (WebApi).
+2023-05-09 21:28:55.290 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Boolean'.
+2023-05-09 21:28:55.291 +03:00 [INF] Executed action WebApi.Controllers.MathController.IsEven (WebApi) in 2.707ms
+2023-05-09 21:28:55.291 +03:00 [INF] Executed endpoint 'WebApi.Controllers.MathController.IsEven (WebApi)'
+2023-05-09 21:28:55.291 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/api/Math?number=97 - - - 400 - application/json;+charset=utf-8 7.5460ms
+2023-05-09 21:31:32.786 +03:00 [INF] Application is shutting down...
+2023-05-09 21:31:38.525 +03:00 [INF] User profile is available. Using '/Users/mervebesen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-05-09 21:31:38.648 +03:00 [INF] Now listening on: http://localhost:5223
+2023-05-09 21:31:38.650 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 21:31:38.651 +03:00 [INF] Hosting environment: Development
+2023-05-09 21:31:38.651 +03:00 [INF] Content root path: /Users/mervebesen/Desktop/C#/UpStorage/src/WebApi
+2023-05-09 21:31:39.370 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/index.html - -
+2023-05-09 21:31:39.714 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/index.html - - - 200 - text/html;charset=utf-8 357.4857ms
+2023-05-09 21:31:40.005 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - -
+2023-05-09 21:31:40.121 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Math" for actions - WebApi.Controllers.MathController.IsEven (WebApi),WebApi.Controllers.MathController.Sum (WebApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-09 21:31:40.139 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 134.0995ms
+2023-05-09 21:32:15.996 +03:00 [INF] Application is shutting down...
+2023-05-09 21:32:21.822 +03:00 [INF] User profile is available. Using '/Users/mervebesen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-05-09 21:32:21.960 +03:00 [INF] Now listening on: http://localhost:5223
+2023-05-09 21:32:21.962 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 21:32:21.962 +03:00 [INF] Hosting environment: Development
+2023-05-09 21:32:21.962 +03:00 [INF] Content root path: /Users/mervebesen/Desktop/C#/UpStorage/src/WebApi
+2023-05-09 21:32:22.498 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/index.html - -
+2023-05-09 21:32:22.903 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/index.html - - - 200 - text/html;charset=utf-8 414.9413ms
+2023-05-09 21:32:23.257 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - -
+2023-05-09 21:32:23.461 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.5772ms
+2023-05-09 21:32:46.291 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5223/api/Math application/json 32
+2023-05-09 21:32:46.312 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-05-09 21:32:46.317 +03:00 [INF] Executing endpoint 'WebApi.Controllers.MathController.Sum (WebApi)'
+2023-05-09 21:32:46.329 +03:00 [INF] Route matched with {action = "Sum", controller = "Math"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Sum(Int32[]) on controller WebApi.Controllers.MathController (WebApi).
+2023-05-09 21:32:46.357 +03:00 [ERR] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Application.Common.Helpers.MathHelper.Sum(Int32[] values) in /Users/mervebesen/Desktop/C#/UpStorage/src/Application/Common/Helpers/MathHelper.cs:line 16
+   at WebApi.Controllers.MathController.Sum(Int32[] numbers) in /Users/mervebesen/Desktop/C#/UpStorage/src/WebApi/Controllers/MathController.cs:line 32
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-05-09 21:32:46.374 +03:00 [INF] Executing ObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-05-09 21:32:46.381 +03:00 [INF] Executed action WebApi.Controllers.MathController.Sum (WebApi) in 47.7072ms
+2023-05-09 21:32:46.383 +03:00 [INF] Executed endpoint 'WebApi.Controllers.MathController.Sum (WebApi)'
+2023-05-09 21:32:46.383 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5223/api/Math application/json 32 - 500 - application/json;+charset=utf-8 92.1813ms
+2023-05-09 21:33:24.520 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5223/api/Math application/json 37
+2023-05-09 21:33:24.525 +03:00 [INF] Executing endpoint 'WebApi.Controllers.MathController.Sum (WebApi)'
+2023-05-09 21:33:24.526 +03:00 [INF] Route matched with {action = "Sum", controller = "Math"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Sum(Int32[]) on controller WebApi.Controllers.MathController (WebApi).
+2023-05-09 21:33:24.533 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2023-05-09 21:33:24.534 +03:00 [INF] Executed action WebApi.Controllers.MathController.Sum (WebApi) in 7.84ms
+2023-05-09 21:33:24.535 +03:00 [INF] Executed endpoint 'WebApi.Controllers.MathController.Sum (WebApi)'
+2023-05-09 21:33:24.535 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5223/api/Math application/json 37 - 200 - application/json;+charset=utf-8 14.7310ms
+2023-05-09 21:37:02.526 +03:00 [INF] Application is shutting down...
+2023-05-09 21:37:07.883 +03:00 [INF] User profile is available. Using '/Users/mervebesen/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-05-09 21:37:08.090 +03:00 [INF] Now listening on: http://localhost:5223
+2023-05-09 21:37:08.092 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 21:37:08.092 +03:00 [INF] Hosting environment: Development
+2023-05-09 21:37:08.092 +03:00 [INF] Content root path: /Users/mervebesen/Desktop/C#/UpStorage/src/WebApi
+2023-05-09 21:37:08.802 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/index.html - -
+2023-05-09 21:37:09.217 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/index.html - - - 200 - text/html;charset=utf-8 423.7031ms
+2023-05-09 21:37:09.503 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - -
+2023-05-09 21:37:09.707 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5223/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.1173ms
+2023-05-09 21:38:22.517 +03:00 [INF] Application is shutting down...

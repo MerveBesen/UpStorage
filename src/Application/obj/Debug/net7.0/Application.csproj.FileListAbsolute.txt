@@ -13,3 +13,12 @@
 /Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/refint/Application.dll
 /Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/Application.pdb
 /Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/bin/Debug/net7.0/en-GB/Application.resources.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/bin/Debug/net7.0/tr-TR/Application.resources.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/Application.Resources.Common.Localizations.CommonLocalizations.en-GB.resources
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/Application.Resources.Common.Localizations.CommonLocalizations.tr-TR.resources
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/Application.csproj.GenerateResource.cache
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/en-GB/Application.resources.cs
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/en-GB/Application.resources.dll
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/tr-TR/Application.resources.cs
+/Users/mervebesen/Desktop/C#/UpStorage/src/Application/obj/Debug/net7.0/tr-TR/Application.resources.dll
